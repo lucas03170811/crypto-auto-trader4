@@ -69,6 +69,9 @@ def trade_logic(symbol, trade_type, rule):
         print(f"❌ {symbol} 交易錯誤: {e}")
 
 if __name__ == "__main__":
+    print("🚀 啟動交易機器人")
+print("✅ 讀取 API Key:", api_key)
+print("✅ 讀取 API Secret:", "✔️ 有" if api_secret else "❌ 沒有")
     print("📈 自動交易機器人已啟動（RSI + 止損）")
     while True:
         for t_type, symbols in TRADE_SETTINGS.items():
